@@ -17,15 +17,11 @@ export class Usuario {
     get imageUrl(){
         // /uploads/usuarios/no-image
 
-        // if (!this.img) {
-        //     return `${base_url}/uploads/usuarios/no-image`;
-        // }
-
-        if ( this.img.includes('https') ) { //si el nombre de la imagen incluye https
+        if (!this.img) {
+            return `${base_url}/uploads/usuarios/no-image`;
+        }else if ( this.img.includes('https') ) { //si el nombre de la imagen incluye https
             return this.img;            
-        }
-
-        if (this.img) {
+        }else if (this.img) {
             return `${base_url}/uploads/usuarios/${this.img}`;
         }else{
             return `${base_url}/uploads/usuarios/no-image`;

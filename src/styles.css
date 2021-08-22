@@ -10,3 +10,21 @@
 #themecolors .selector, .cursor{
     cursor: pointer;
 }
+
+.w100{
+    width: 100px;
+}
+
+.w140{
+    width: 140px;
+}
+
+.img-avatar{
+    width: 200px;
+    height: 200px;
+}
+
+.avatar{
+    border-radius: 100%;
+    width: 40px;
+}
